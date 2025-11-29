@@ -1,16 +1,26 @@
-**.DS_Store
+.docusaurus/
+node_modules/
+# Project
+/.vs
+# Visual Studio 2015/2017 cache/options directory
+.vs/
+
+repo/**
+review/**
+
+.vscode
+
+# Log files
+*.log
+
+# Python virtualenv
+.venv*
+.virtualenv*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
-
-database/
-**.sqlite3
-notebooks/6a8b3382-d49c-40e5-94e8-de18f01ebaf3/
-notebooks/bbd69b7a-1e81-479f-890c-f9e53e1657e3/
-notebooks/ec1a0ea5-64ef-41e3-b71e-271aaba56d5d/
-chroma/
 
 # C extensions
 *.so
@@ -103,30 +113,7 @@ ipython_config.py
 #   install all needed dependencies.
 #Pipfile.lock
 
-# UV
-#   Similar to Pipfile.lock, it is generally recommended to include uv.lock in version control.
-#   This is especially recommended for binary packages to ensure reproducibility, and is more
-#   commonly ignored for libraries.
-#uv.lock
-
-# poetry
-#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
-#   This is especially recommended for binary packages to ensure reproducibility, and is more
-#   commonly ignored for libraries.
-#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
-#poetry.lock
-
-# pdm
-#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
-#pdm.lock
-#   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
-#   in version control.
-#   https://pdm.fming.dev/latest/usage/project/#working-with-version-control
-.pdm.toml
-.pdm-python
-.pdm-build/
-
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow
 __pypackages__/
 
 # Celery stuff
@@ -139,11 +126,13 @@ celerybeat.pid
 # Environments
 .env
 .venv
+.virtualenv
 env/
 venv/
 ENV/
 env.bak/
 venv.bak/
+.idea
 
 # Spyder project settings
 .spyderproject
@@ -169,35 +158,49 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
-# PyCharm
-#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
-#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
-#  and can be added to the global gitignore or merged into this file.  For a more nuclear
-#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
-#.idea/
+logs
 
-# Abstra
-# Abstra is an AI-powered process automation framework.
-# Ignore directories containing user credentials, local state, and settings.
-# Learn more at https://abstra.io/docs
-.abstra/
+.idea/*
+.DS_Store
 
-# Visual Studio Code
-#  Visual Studio Code specific template is maintained in a separate VisualStudioCode.gitignore 
-#  that can be found at https://github.com/github/gitignore/blob/main/Global/VisualStudioCode.gitignore
-#  and can be added to the global gitignore or merged into this file. However, if you prefer, 
-#  you could uncomment the following to ignore the enitre vscode folder
-# .vscode/
+output/
+*.pkl
 
-# Ruff stuff:
-.ruff_cache/
+# local config files
+*.config.local
+OAI_CONFIG_LIST
+key_openai.txt
+key_aoai.txt
+base_aoai.txt
+wolfram.txt
 
-# PyPI configuration file
-.pypirc
+# DB on disk for Teachability
+tmp/
+test/my_tmp/*
 
-# Cursor
-#  Cursor is an AI-powered code editor. `.cursorignore` specifies files/directories to
-#  exclude from AI features like autocomplete and code analysis. Recommended for sensitive data
-#  refer to https://docs.cursor.com/context/ignore-files
-.cursorignore
-.cursorindexingignore
+# Storage for the AgentEval output
+test/test_files/agenteval-in-out/out/
+
+# local cache or coding foler
+local_cache/
+coding/
+
+# Files created by tests
+*tmp_code_*
+test/agentchat/test_agent_scripts/*
+
+# test cache
+.cache_test
+.db
+local_cache
+
+
+notebook/result.png
+samples/apps/autogen-studio/autogenstudio/models/test/
+
+notebook/coding
+
+# dotnet artifacts
+artifacts
+
+repo/**
