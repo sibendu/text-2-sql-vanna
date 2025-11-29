@@ -1,8 +1,5 @@
 # Text-To-SQL with Vanna AI
 
-Based on (https://medium.com/mitb-for-all/text-to-sql-just-got-easier-meet-vanna-ai-your-rag-powered-sql-sidekick-e781c3ffb2c5)
-
-
 ## Setup
 
 ### Step 1: Setup environment
