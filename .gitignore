@@ -1,3 +1,11 @@
+.chainlit
+.files
+
+# Python virtualenv
+.venv*
+.virtualenv*
+
+
 .docusaurus/
 node_modules/
 # Project
@@ -13,9 +21,6 @@ review/**
 # Log files
 *.log
 
-# Python virtualenv
-.venv*
-.virtualenv*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
